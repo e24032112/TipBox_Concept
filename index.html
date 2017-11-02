@@ -1,62 +1,234 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no">
-            <link href="http://jqmdesigner.appspot.com/gk/lib/jquery.mobile/1.4.5/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css" />
-            <!-- Export CSS  -->
-            <style>
-                #effectname{
-                    text-shadow:none;
-                    font-size:50px;
-                    color:#fff;
-                    width:100%;
-                    margin-top:30px;
-                    text-align:center;
-                }
-            </style>
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-            <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-            <!-- Uncomment the following to include cordova in your android project -->
-            <!--<script src="http://jqmdesigner.appspot.com/platforms/android/cordova.js"></script>-->
-            <!-- Export JS  -->
-            <script>
-                (function () {
-                 $(document).on('pageinit', '#home', function () {
-                                $('.ui-btn').on('click', function () {
-                                                var effectName = $(this).attr('data-transition');
-                                                $('#effectname').text(effectName);
-                                                });
-                                });
-                 })()
-                </script>
-            <title>EZo App</title>
-            </head>
-    
-    <body>
-        <!-- Page: home  -->
-        <div id="home" data-role="page" style="style:background:#000;">
-            <div role="main" class="ui-content">
-                <a class="ui-btn" href="#NewPage" data-transition="slide">slide</a>
-                <a class="ui-btn" href="#NewPage" data-transition="slideup">slideup</a>
-                <a class="ui-btn" href="#NewPage" data-transition="slidedown">slidedown</a>
-                <a class="ui-btn" href="#NewPage" data-transition="slidefade">slidefade</a>
-                <a class="ui-btn" href="#NewPage" data-transition="pop">pop</a>
-                <a class="ui-btn" href="#NewPage" data-transition="fade">fade</a>
-                <a class="ui-btn" href="#NewPage" data-transition="flip">flip</a>
-                <a class="ui-btn" href="#NewPage" data-transition="flow">flow</a>
-                <a class="ui-btn" href="#NewPage" data-transition="turn">turn</a>
-                <a class="ui-btn" href="#NewPage">default</a>
-            </div>
-        </div>
-        <!-- Page: NewPage  -->
-        <div id="NewPage" data-role="page" style="background:#069;">
-            <div role="main" class="ui-content">
-                <a class="ui-btn ui-btn-b" data-rel="back">back</a>
-                <div id="effectname"></div>
-            </div>
-        </div>
-    </body>
-    
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tipbox</title>
+	<link href="img/icon_1.ico" rel="SHORTCUT ICON">
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+	<script data-pace-options='{ "ajax": false, "eventLag": false, "elements": {"selectors": ["img"] } }' src="js/pace.min.js"></script>
+  	<link href="css/pace.css" rel="stylesheet" />
+
+	<link href="css/ionicons.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  </head>
+  <body>
+	<div id="preloader"></div>
+	<div class="modal fade" id="myModal" role="dialog">
+    	<div class="modal-dialog">   
+      	<!-- Modal content-->
+      		<div class="modal-content" style="padding: 1vw 1vw 0vw 1vw; background-color: #231f20; text-shadow: none;">
+				<div class="alert alert-danger error">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<strong>Error!</strong> This function is only supported in Chrome 25 or higher version.
+				</div>
+			</div>
+    	</div>
+  	</div>
+	<div class="modal fade" id="yourModal" role="dialog">
+    	<div class="modal-dialog">   
+      	<!-- Modal content-->
+      		<div class="modal-content" style="padding: 1vw 1vw 0vw 1vw; background-color: #231f20; text-shadow: none;">
+				<div class="alert alert-danger">
+					<img src="https://media.giphy.com/media/xTk9ZGzPbqz5cP9Zg4/giphy.gif" style="width:100%;">
+				</div>
+			</div>
+    	</div>
+  	</div>
+    <div class="container-fluid">
+	<div class="row" id="row1">
+		<div class="col-md-12">
+			<div class="carousel slide div_carousel" id="carousel-983122">
+				<div class="row div_in_carousel">
+					<div class="col-md-12 content_in_carousel">
+						<p>
+							Tip for your <br>
+							favorite <br>
+							<u><em>Street Artist</em></u> <br>
+							with <br>
+							<u><em>Paypal.</em></u>
+						</p>
+						<div class="inner-addon left-addon right-addon">
+							<i class="glyphicon glyphicon-search"></i>
+							<i class="glyphicon ionicons ion-android-microphone"></i>
+							<input type="text" class="search search_top" placeholder="Type your city.">
+						</div>
+					</div>
+				</div>
+				<ol class="carousel-indicators">
+					<li data-slide-to="0" data-target="#carousel-983122">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-983122" class="active">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item">
+						<img alt="Carousel Bootstrap First" src="img/slider_1_n.jpg">
+						<div class="carousel-caption">
+						</div>
+					</div>
+					<div class="item active">
+						<img alt="Carousel Bootstrap Second" src="img/slider_2_n.jpg">
+						<div class="carousel-caption">
+						</div>
+					</div>
+				</div> 
+			</div>
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+				<div class="navbar-header">					
+					<button class="navbar-brand" href="index.html">
+						<img src="img/logo.png">
+					</button>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<button class="btn nav-btn nav-btn-left" id="Google_Play">
+						<img src="img/Google Play.png">
+						<img style="display: none;" src="img/Google Play hover.png">
+					</button>
+					<button class="btn nav-btn nav-btn-left" id="Apple_Store">
+						<img src="img/Apple Store.png">
+						<img style="display: none;" src="img/Apple Store hover.png">
+					</button>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<button class="btn nav-btn nav-btn-right nav-btn-right-h">
+								<p>Login</p>
+							</button>
+						</li>
+						<li>
+							<button class="btn nav-btn nav-btn-right nav-btn-right-h">
+								<p>Sign up</p>
+							</button>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<img src="img/pays.png" id="pays">
+		</div>
+	</div>
+	<div class="row row3">
+		<div class="col-md-12">
+			<img src="img/row3.png">
+		</div>
+	</div>
+	<button id="arrow">
+		<a href="#google_map_id"></a>
+		<img src="img/choose_3.png">
+	</button>
+	<div class="row google_map" id="google_map_id">
+		<div class="col-md-12">
+			<div class="row div_in_google_map">
+				<div class="col-md-12 content_in_google_map">
+					<h2>
+						Find your city.
+					</h2>
+					<p>
+						And your favorite talent/service.
+					</p>
+					<div class="inner-addon left-addon right-addon">
+						<i class="glyphicon glyphicon-search"></i>
+						<i class="glyphicon ionicons ion-android-microphone"></i>
+						<input type="text" class="search" placeholder="Type your city.">
+					</div>
+					<button class="btn btn-default search_it">
+						Search it!
+					</button>
+				</div>
+			</div>
+			<div id="map">
+			</div>
+		</div>
+	</div>
+	<div class="row row4">
+		<div class="col-md-12 col4">
+			<h2>
+				Vote for our next city!
+			</h2>
+			<p>
+				We want to focus on cities<br>
+				where there is demand,<br>
+				and we can make a difference.
+			</p>
+			<div class="row row4-row">
+				<div class="col-xs-4">
+					<div class="btn-group">						 
+						<button class="btn btn-default col4-input">
+							Choose your city
+						</button> 
+						<button data-toggle="dropdown" class="btn btn-default dropdown-toggle col4-drop" id="drop">
+							<img src="img/choose_2.png">
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a style="color: #727272" id="default">Choose</a>
+							</li>
+							<li>
+								<a>Tainan</a>
+							</li>
+							<li>
+								<a>New York</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<input type="email" class="col4-input" id="exampleInputEmail1" placeholder="Your email.">
+				</div>
+				<div class="col-xs-4">					 
+					<button class="btn btn-default summit">
+						Summit
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row row5">
+		<div class="col-md-12">
+			<center>
+				<img src="img/logo.png">
+				<h3 class="text-center">
+					Tip your favorite talent/service!
+				</h3>
+				<div class="cnvc1">
+					<a>Company</a><a>|</a><a>News</a><a>|</a><a>Vote</a><a>|</a><a>Contact</a>
+				</div>
+				<div></div>
+				<div class="appgoo">					
+					<button type="button">
+						<img src="img/apple.png">
+					</button> 
+					<button type="button">
+						<img src="img/android.png">
+					</button> 
+				</div>
+				<h1>
+					© 2017 Tipbox™
+				</h1>
+			</center>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDR6karV1VluUdop9oZ_hhE4uBRHLeh3ys&language=en&callback=initMap"
+	async defer></script>
+
+  </body>
 </html>
