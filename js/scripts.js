@@ -251,7 +251,7 @@ var search_map = (address) => {
                 center: {lat: loc.lat, lng: loc.lng},
                 scrollwheel: false,
                 disableDefaultUI: true,
-				zoomControl: true,
+		zoomControl: true,
                 zoom: 11
             });
             var Append_ = true;
@@ -280,14 +280,10 @@ var search_map = (address) => {
 
 var initMap = () => {
 	// Create a map object and specify the DOM element for display.
-	$.getJSON("https://maps.googleapis.com/maps/api/geocode/json",
-        {"key":"AIzaSyDW-GIfy8FarJJyH5D_4YRicBPYEcjLnr0","language":"en"},
-		map = new google.maps.Map(document.getElementById('map'), {
-		center: {lat: 22.9997281, lng: 120.2270277},
-		scrollwheel: false,
-		disableDefaultUI: true,
-		zoomControl: true,
-		zoom: 11
-		});
-	);
-};
+	var map = new google.maps.Map(document.getElementById('map'), {
+	center: {lat: 22.9997281, lng: 120.2270277},
+	scrollwheel: false,
+	disableDefaultUI: true,
+	zoomControl: true,
+	zoom: 11
+	});
