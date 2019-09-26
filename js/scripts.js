@@ -1,5 +1,4 @@
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW-GIfy8FarJJyH5D_4YRicBPYEcjLnr0&language=en&callback=initMap"
-	async defer></script>
+var key = "AIzaSyDW-GIfy8FarJJyH5D_4YRicBPYEcjLnr0";
 var recognizing = false;
 
 var recognition_text = "";
