@@ -277,9 +277,9 @@ var search_map = (address) => {
         }
     );
 };
-"https://maps.googleapis.com/maps/api/js?callback=initMap"
+
 var initMap = () => {
-	$.getJSON("https://maps.googleapis.com/maps/api/geocode/json",
+	$.getJSON("https://maps.googleapis.com/maps/api/js?",
         	{"address":"Tainan","key":"AIzaSyDW-GIfy8FarJJyH5D_4YRicBPYEcjLnr0","language":"en"},
         	function(data){
 			// Create a map object and specify the DOM element for display.
