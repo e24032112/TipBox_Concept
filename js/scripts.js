@@ -289,5 +289,5 @@ var initMap = () => {
 		zoomControl: true,
 		zoom: 11
 		});
-	)
+	
 };
