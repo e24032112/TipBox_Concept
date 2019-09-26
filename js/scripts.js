@@ -240,7 +240,7 @@ var correct_add = (Ar, str) => {
 
 var search_map = (address) => {
     $.getJSON("https://maps.googleapis.com/maps/api/geocode/json",
-        {"address":address,"key":"AIzaSyDR6karV1VluUdop9oZ_hhE4uBRHLeh3ys","language":"en"},
+        {"address":address,"key":"AIzaSyDW-GIfy8FarJJyH5D_4YRicBPYEcjLnr0","language":"en"},
         function(data){
             var addr = data.results[0].address_components;
             addr = correct_add(addr,address);
